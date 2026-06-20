@@ -398,7 +398,7 @@
             margin-bottom: 10px;
         }
 
-        /* --- Premium Brand Footer --- */
+        /* --- Premium Brand Brand Footer --- */
         footer {
             background-color: #1A1A1A;
             color: #F3ECE3;
@@ -552,16 +552,14 @@
 
             <select id="conditionFilter" class="filter-select">
                 <option value="all">All Conditions</option>
-                <option value="Pristine">OKAY</option>
-                <option value="Excellent">GOOD</option>
-                <option value="Very Good">GREAT</option>
+                <option value="Great">Great</option>
             </select>
 
             <select id="colorFilter" class="filter-select">
                 <option value="all">All Colors</option>
-                <option value="Green">Brown</option>
+                <option value="Brown">Brown</option>
                 <option value="Black">Black</option>
-                <option value="Yellow">Pink</option>
+                <option value="Yellow">Yellow</option>
                 <option value="Blue">Blue</option>
                 <option value="White">White</option>
             </select>
@@ -629,12 +627,12 @@
     </footer>
 
     <script>
-        // High-end catalog inventory database configured entirely in South African Rands (R)
+        // Restored your precise original inventory database config
         const inventory = [
             { id: 1, brand: "Fendi", name: "Saint Louis PM Tote", retailPrice: "R30,000+", luxePrice: "R3,800", color: "Brown", condition: "Great", imgUrl: "https://img.sanishtech.com/u/10930fb7220449220e7974b88ad980ea.png" },
             { id: 2, brand: "Louis Vuitton", name: "LV Speedy Nano", retailPrice: "R30,000+", luxePrice: "R3,800", color: "Brown", condition: "Great", imgUrl: "https://img.sanishtech.com/u/e0f97649997de7e9a2e7da403c970e28.png" },
             { id: 3, brand: "Prada", name: "PRADA Nylon Bag", retailPrice: "R20,000+", luxePrice: "R3,300", color: "Black", condition: "Great", imgUrl: "https://img.sanishtech.com/u/c88b37607d8312071cb6030822bcba84.png" },
-            { id: 4, brand: "Prada", name: "PRADA Gaufre Bag", retailPrice: "R30,000", luxePrice: "R3,000", color: "Blue", condition: "Great", imgUrl: "https://img.sanishtech.com/u/01e897dd5eb26e1d00f6a8594c1672f1.png" },
+            { id: 4, brand: "Prada", name: "PRADA Gaufre Bag", retailPrice: "R30,000", luxePrice: "R3,000", color: "Blue", condition: "Great", imgUrl: "https://img.sanishtech.com/u/01e897dd5eb26e1d00f6a8594c1672f1.png" }, 
             { id: 5, brand: "Goyard", name: "Goyard Grey Tote", retailPrice: "R40,000+", luxePrice: "R4,500", color: "Grey", condition: "Great", imgUrl: "https://img.sanishtech.com/u/1a4c064c7c084704ec73adffb1d8dfad.png" },
             { id: 6, brand: "Dior", name: "DIOR Saddle Bag", retailPrice: "R40,000+", luxePrice: "R4,500", color: "White", condition: "Great", imgUrl: "https://img.sanishtech.com/u/47779a95fcc801e1f638483e0087d5d5.png" }
         ];
@@ -644,7 +642,7 @@
         const conditionFilter = document.getElementById('conditionFilter');
         const colorFilter = document.getElementById('colorFilter');
         
-        // Modal Element selectors
+        // Modal UI Element target rules
         const productModal = document.getElementById('productModal');
         const closeModal = document.getElementById('closeModal');
         const modalImg = document.getElementById('modalImg');
@@ -678,7 +676,7 @@
                         <span class="retail-price">Retail: ${item.retailPrice}</span>
                         <span class="luxe-price">${item.luxePrice}</span>
                     </div>
-                    <button class="view-original-btn" onclick="openProductPreview('${item.brand} ${item.name}', '${item.imgUrl}')">See Actual Product</button>
+                    <button class="view-original-btn" onclick="openProductPreview('${item.brand} ${item.name}', '${item.imgUrl}')">See Original Product</button>
                 `;
                 productGrid.appendChild(card);
             });
